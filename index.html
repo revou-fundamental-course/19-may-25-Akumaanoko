@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu - Celsius & Fahrenheit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🌡️ Konversi Suhu</h1>
+        <p>Celsius ↔ Fahrenheit Converter</p>
+    </header>
+
+    <div class="container">
+        <!-- Bagian Konverter -->
+        <div class="converter-section">
+            <h2 class="section-title">Konverter Suhu</h2>
+            <div class="converter-grid">
+                <!-- Celsius ke Fahrenheit -->
+                <div class="converter-card">
+                    <h3>Celsius ke Fahrenheit</h3>
+                    <div class="input-group">
+                        <label for="celsiusInput">Suhu dalam Celsius (°C):</label>
+                        <input type="number" id="celsiusInput" placeholder="Masukkan suhu dalam Celsius" step="0.01">
+                    </div>
+                    <div class="result" id="celsiusResult">Hasil akan muncul di sini</div>
+                </div>
+
+                <!-- Fahrenheit ke Celsius -->
+                <div class="converter-card">
+                    <h3>Fahrenheit ke Celsius</h3>
+                    <div class="input-group">
+                        <label for="fahrenheitInput">Suhu dalam Fahrenheit (°F):</label>
+                        <input type="number" id="fahrenheitInput" placeholder="Masukkan suhu dalam Fahrenheit" step="0.01">
+                    </div>
+                    <div class="result" id="fahrenheitResult">Hasil akan muncul di sini</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Cara Kalkulasi -->
+        <div class="calculation-section">
+            <h2 class="section-title">Cara Kalkulasi</h2>
+            <p style="text-align: center; margin-bottom: 1rem; font-size: 1.1rem;">
+                Masukkan nilai pada salah satu konverter di atas untuk melihat langkah-langkah kalkulasinya
+            </p>
+            <div class="calculation-display" id="calculationSteps">Pilih salah satu konverter dan masukkan nilai untuk melihat cara kalkulasinya secara detail.</div>
+        </div>
+
+        <!-- Bagian Penjelasan Rumus -->
+        <div class="formula-section">
+            <h2 class="section-title">Rumus Konversi Suhu</h2>
+            <div class="formula-grid">
+                <div class="formula-card">
+                    <h4>Celsius ke Fahrenheit</h4>
+                    <div class="formula">°F = (°C × 9/5) + 32</div>
+                    <div class="formula-description">
+                        <strong>Cara:</strong><br>
+                        1. Kalikan suhu Celsius dengan 9/5 (atau 1,8)<br>
+                        2. Tambahkan hasil dengan 32<br>
+                        <br>
+                        <strong>Contoh:</strong> 25°C<br>
+                        °F = (25 × 9/5) + 32 = 45 + 32 = 77°F
+                    </div>
+                </div>
+
+                <div class="formula-card">
+                    <h4>Fahrenheit ke Celsius</h4>
+                    <div class="formula">°C = (°F - 32) × 5/9</div>
+                    <div class="formula-description">
+                        <strong>Cara:</strong><br>
+                        1. Kurangi suhu Fahrenheit dengan 32<br>
+                        2. Kalikan hasil dengan 5/9 (atau 0,556)<br>
+                        <br>
+                        <strong>Contoh:</strong> 77°F<br>
+                        °C = (77 - 32) × 5/9 = 45 × 5/9 = 25°C
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Konversi Suhu Celsius ↔ Fahrenheit by surya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
